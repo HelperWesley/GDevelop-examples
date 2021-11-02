@@ -21,17 +21,18 @@ A step by step guide is given [here](http://wiki.compilgames.net/doku.php/gdevel
 - A screenshot of the example is welcome
 - The project folder (Not the exported game) should be converted to a zip file and attached with the issue. Drag and drop the file on to the text field
 - All the things in the checklist must be completed
-
-# I need some help with the project
-If you need help with the project.We understand, let us know and we'll be more than happy to help you.
-
-# I no longer have the motivation to continue working on the example
-If you get de-motivated or don't get the time to continue working on the **submitted** project, let us know and we'll close the submission. 
-Let the community know and see if someone is willing to take your role, you can then hand over the ownership to someone else.
-If the example is really good, we will be happy to continue working on it ourselfs.
 # ❓ FAQ
 
 ## Will my submission be rejected? Will my hard work go to waste?
 Don't worry too much. Although we don't guarantee that your example will be accepted. There is still a good chance it will be accepted. Rarely do submissions get rejected.
 The submission should not
 You are instructed to follow the [Best practices](http://wiki.compilgames.net/doku.php/gdevelop5/community/guide-for-submitting-an-example#best_practices) when creating an example for the submission to be considered
+
+# I need some help with the project, who should I contact?
+If you need help with the project. We understand, let us know and we'll be more than happy to help you.
+
+# I no longer have the motivation to continue working on the example, what should i do?
+If you get de-motivated or don't get the time to continue working on the **submitted** project, let us know and we'll close the submission. 
+Let the community know and see if someone is willing to take your role, you can then hand over the ownership to someone else.
+If the example is really good, we will be happy to continue working on it ourselfs.
+
