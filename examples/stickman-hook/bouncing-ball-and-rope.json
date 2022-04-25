@@ -12,13 +12,13 @@
     "orientation": "landscape",
     "packageName": "com.example.bounceandhook",
     "pixelsRounding": false,
-    "projectUuid": "2afc9b28-8fee-406c-afc2-210340bd0375",
+    "projectUuid": "ee1a52e9-5f0a-49e0-bcbf-940cee1a637b",
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "Bounce and Hook",
-    "description": "Control a ball, and make it bounce and hook through multiple levels to reach the end.\n\nControls:\n   Computer: Mouse left click\n   Touch screens: Touch and hold",
+    "description": "Control a ball, and make it bounce clouds and hook stars through multiple levels.\n\nControls:\n   Computer: Mouse left click\n   Touch screens: Touch and hold",
     "author": "",
     "windowWidth": 960,
     "windowHeight": 540,
@@ -68,11 +68,14 @@
       "showProgressBar": true
     },
     "authorIds": [
-      "RdnXeK0samTcrV33dVVHUvfOr6d2",
       "ZJxWdIDmJzUA5iAWryEItxINA7n1"
     ],
     "categories": [],
-    "playableDevices": [],
+    "playableDevices": [
+      "keyboard",
+      "gamepad",
+      "mobile"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -93,87 +96,11 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": true,
-        "file": "GDevelop.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "GDevelop.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": true,
-        "file": "Back.jpg",
-        "kind": "image",
-        "metadata": "",
-        "name": "Back.jpg",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": true,
-        "file": "Peg.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Peg.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": true,
-        "file": "Shelf.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Shelf.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": true,
-        "file": "Ball.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Ball.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": true,
-        "file": "Shadow.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Shadow.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": true,
-        "file": "BoundsLine.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "BoundsLine.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
         "file": "Nathaniel-19.otf",
         "kind": "font",
         "metadata": "",
         "name": "Nathaniel-19.otf",
         "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/tiled_Forest Background.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tiled_Forest Background.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://resources.gdevelop-app.com/assets/Generic Backgrounds/tiled_Forest Background.png",
-          "name": "gdevelop-asset-store"
-        }
       },
       {
         "alwaysLoaded": false,
@@ -187,196 +114,134 @@
           "identifier": "https://resources.gdevelop-app.com/assets/Rolling Ball Pack/Balls/Small Red Ball.png",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Blue panel_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue panel_No Shadow.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Interface/PX UI Basic/Blue panel_No Shadow.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Blue panel_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue panel_Shadow.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Interface/PX UI Basic/Blue panel_Shadow.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Star_Filled.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Star_Filled.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Rolling Ball Pack/Interface/Star_Filled.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Star_Outline.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Star_Outline.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Rolling Ball Pack/Interface/Star_Outline.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tiled_Empty Cloud Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Empty Cloud Background.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Generic Backgrounds/tiled_Empty Cloud Background.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/cloud (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cloud.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Generic Backgrounds/Background Objects/Retina/cloud (1).png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "cloud.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "cloud.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "song18.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "song18.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "success.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "success.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "applause.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "applause.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
+      },
+      {
+        "file": "whoosh.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "whoosh.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
   },
   "objects": [
-    {
-      "height": 100,
-      "name": "ForestBackground",
-      "tags": "",
-      "texture": "tiled_Forest Background.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 100,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "name": "MainChar",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Physics2",
-          "type": "Physics2::Physics2Behavior",
-          "bodyType": "Dynamic",
-          "bullet": true,
-          "fixedRotation": false,
-          "canSleep": true,
-          "shape": "Circle",
-          "shapeDimensionA": 0,
-          "shapeDimensionB": 0,
-          "shapeOffsetX": 0,
-          "shapeOffsetY": 0,
-          "polygonOrigin": "Center",
-          "vertices": [],
-          "density": 1,
-          "friction": 0.1,
-          "restitution": 1.1,
-          "linearDamping": 0,
-          "angularDamping": 0.1,
-          "gravityScale": 1,
-          "layers": 1,
-          "masks": 1
-        }
-      ],
-      "animations": [
-        {
-          "name": "Ball",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 1,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Ball.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 32,
-                    "y": 32
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 32.5,
-                    "y": 31.5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bottomMargin": 16,
-      "height": 64,
-      "leftMargin": 10,
-      "name": "Platform",
-      "rightMargin": 10,
-      "tags": "",
-      "texture": "Shelf.png",
-      "tiled": false,
-      "topMargin": 10,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 128,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Physics2",
-          "type": "Physics2::Physics2Behavior",
-          "bodyType": "Static",
-          "bullet": false,
-          "fixedRotation": true,
-          "canSleep": true,
-          "shape": "Box",
-          "shapeDimensionA": 0,
-          "shapeDimensionB": 0,
-          "shapeOffsetX": 0,
-          "shapeOffsetY": 0,
-          "polygonOrigin": "Center",
-          "vertices": [],
-          "density": 1,
-          "friction": 0.3,
-          "restitution": 0.1,
-          "linearDamping": 0.1,
-          "angularDamping": 0.1,
-          "gravityScale": 1,
-          "layers": 1,
-          "masks": 1
-        }
-      ]
-    },
-    {
-      "name": "SwingBox",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Physics2",
-          "type": "Physics2::Physics2Behavior",
-          "bodyType": "Static",
-          "bullet": false,
-          "fixedRotation": true,
-          "canSleep": true,
-          "shape": "Circle",
-          "shapeDimensionA": 0,
-          "shapeDimensionB": 0,
-          "shapeOffsetX": 0,
-          "shapeOffsetY": 0,
-          "polygonOrigin": "Center",
-          "vertices": [],
-          "density": 1,
-          "friction": 0.3,
-          "restitution": 0.1,
-          "linearDamping": 0.1,
-          "angularDamping": 0.1,
-          "gravityScale": 1,
-          "layers": 1,
-          "masks": 1
-        }
-      ],
-      "animations": [
-        {
-          "name": "Peg",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 1,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Peg.png",
-                  "points": [
-                    {
-                      "name": "Swing",
-                      "x": 41,
-                      "y": 34.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "name": "Rope",
       "tags": "",
@@ -401,46 +266,6 @@
       "clearBetweenFrames": true
     },
     {
-      "name": "MainShadow",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Shadow",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "Shadow.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "SmallRedBall",
       "tags": "",
       "type": "Sprite",
@@ -463,10 +288,10 @@
           "polygonOrigin": "Center",
           "vertices": [],
           "density": 1,
-          "friction": 0.1,
-          "restitution": 1.1,
+          "friction": 0,
+          "restitution": 1,
           "linearDamping": 0,
-          "angularDamping": 0.1,
+          "angularDamping": 0,
           "gravityScale": 1,
           "layers": 1,
           "masks": 1
@@ -474,10 +299,10 @@
         {
           "name": "SmoothCamera",
           "type": "SmoothCamera::SmoothCamera",
-          "LeftwardSpeed": 0.9,
-          "RightwardSpeed": 0.9,
-          "UpwardSpeed": 0.9,
-          "DownwardSpeed": 0.9,
+          "LeftwardSpeed": 1.3,
+          "RightwardSpeed": 1.3,
+          "UpwardSpeed": 1.3,
+          "DownwardSpeed": 1.3,
           "FollowOnX": false,
           "FollowOnY": false,
           "FollowFreeAreaLeft": 0,
@@ -535,7 +360,13 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "Small Red Ball.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Grab",
+                      "x": 32,
+                      "y": 32
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -565,10 +396,212 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "height": 128,
+      "name": "EmptyCloudBackground",
+      "tags": "",
+      "texture": "tiled_Empty Cloud Background.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 128,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Night",
+          "name": "Effect",
+          "doubleParameters": {
+            "intensity": 0.8,
+            "opacity": 0.1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": []
+    },
+    {
+      "name": "Star",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "bodyType": "Static",
+          "bullet": false,
+          "fixedRotation": true,
+          "canSleep": true,
+          "shape": "Circle",
+          "shapeDimensionA": 0,
+          "shapeDimensionB": 0,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 0,
+          "polygonOrigin": "Center",
+          "vertices": [],
+          "density": 1,
+          "friction": 0.3,
+          "restitution": 0.1,
+          "linearDamping": 0.1,
+          "angularDamping": 0.1,
+          "gravityScale": 1,
+          "layers": 1,
+          "masks": 1
+        }
+      ],
+      "animations": [
+        {
+          "name": "Filled",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.02500000037252903,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Star_Filled.png",
+                  "points": [
+                    {
+                      "name": "Grab",
+                      "x": 30,
+                      "y": 52
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Outline",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.02500000037252903,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Star_Outline.png",
+                  "points": [
+                    {
+                      "name": "Grab",
+                      "x": 30,
+                      "y": 52
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BluePanel",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "No Shadow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.02500000037252903,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Blue panel_No Shadow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shadow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.02500000037252903,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "Blue panel_Shadow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "currentLevel",
+      "type": "string",
+      "value": "1"
+    }
+  ],
   "layouts": [
     {
       "b": 209,
@@ -580,7 +613,7 @@
       "oglZNear": 1,
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -593,7 +626,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.30000000000000016,
+        "zoomFactor": 0.9,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -608,25 +641,9 @@
           "name": "Title",
           "persistentUuid": "a95e6f1d-88b0-4b95-ac12-ae6c92a395df",
           "width": 0,
-          "x": 195,
+          "x": 220,
           "y": 38,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 1138,
-          "layer": "",
-          "locked": true,
-          "name": "ForestBackground",
-          "persistentUuid": "d7c2e84e-5382-402d-832d-ed4973d4ab17",
-          "width": 1754,
-          "x": -404,
-          "y": -296,
-          "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -640,25 +657,9 @@
           "name": "Instructions",
           "persistentUuid": "a0f14920-44e8-4f3d-8211-594818d5f6a8",
           "width": 0,
-          "x": 688,
-          "y": 446,
+          "x": 651,
+          "y": 448,
           "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "db314e24-da20-4933-9a56-5c43656335d9",
-          "width": 0,
-          "x": 435,
-          "y": 115,
-          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -689,8 +690,56 @@
           "persistentUuid": "6018b858-ed49-4fcf-a774-0b3b1834c323",
           "width": 0,
           "x": 205,
-          "y": 203,
+          "y": 245,
           "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 752,
+          "layer": "",
+          "locked": true,
+          "name": "EmptyCloudBackground",
+          "persistentUuid": "4fc474d3-2e0b-4e73-aadd-62f329ec0b1e",
+          "width": 1821,
+          "x": -365,
+          "y": -22,
+          "zOrder": -10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 76,
+          "layer": "",
+          "locked": false,
+          "name": "BluePanel",
+          "persistentUuid": "61abf5aa-674e-4f8d-bfe5-fd503d3c6d4e",
+          "width": 284,
+          "x": 636,
+          "y": 434,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Star",
+          "persistentUuid": "27cbfc24-7920-4cab-92bb-7edbfd33ce67",
+          "width": 0,
+          "x": 444,
+          "y": 140,
+          "zOrder": -5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -728,7 +777,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Bounce and Hook",
+          "string": "Grab the stars",
           "font": "Nathaniel-19.otf",
           "characterSize": 80,
           "color": {
@@ -746,42 +795,103 @@
           "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "Center text on scene",
+          "name": "Ambiance and setup",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::SetTextAlignment"
+                  },
+                  "parameters": [
+                    "Title",
+                    "\"center\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "EmptyCloudBackground",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "MusicPlaying"
+                      },
+                      "parameters": [
+                        "",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "song18.mp3",
+                        "1",
+                        "yes",
+                        "30",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            }
+          ],
           "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::SetTextAlignment"
-              },
-              "parameters": [
-                "Title",
-                "\"center\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
         },
         {
           "colorB": 228,
@@ -793,73 +903,62 @@
           "name": "Touch the screen to start the game",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Levels\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "currentLevel",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
           "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisBouton"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Level 1\"",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": true,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "MouseButtonPressed"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PushScene"
-              },
-              "parameters": [
-                "",
-                "\"Title\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
         },
         {
           "colorB": 228,
@@ -871,106 +970,86 @@
           "name": "Initial ball dynamics",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "SmallRedBall",
+                    "Star"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::AddDistanceJoint"
+                  },
+                  "parameters": [
+                    "Star",
+                    "Physics2",
+                    "Star.PointX(\"Grab\")",
+                    "Star.PointY(\"Grab\")",
+                    "SmallRedBall",
+                    "SmallRedBall.PointX(\"Grab\")",
+                    "SmallRedBall.PointY(\"Grab\")",
+                    "-1",
+                    "",
+                    "",
+                    "no",
+                    "ropeJoint"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PrimitiveDrawing::Line"
+                  },
+                  "parameters": [
+                    "Rope",
+                    "SmallRedBall.PointX(\"Grab\")",
+                    "SmallRedBall.PointY(\"Grab\")",
+                    "Star.PointX(\"Grab\")",
+                    "Star.PointY(\"Grab\")",
+                    "3"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
           "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "LinkedObjects::LinkObjects"
-              },
-              "parameters": [
-                "",
-                "SmallRedBall",
-                "SwingBox"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Physics2::AddDistanceJoint"
-              },
-              "parameters": [
-                "SwingBox",
-                "Physics2",
-                "SwingBox.CenterX()",
-                "SwingBox.CenterY()",
-                "SmallRedBall",
-                "SmallRedBall.CenterX()",
-                "SmallRedBall.CenterY()",
-                "-1",
-                "",
-                "",
-                "no",
-                "ropeJoint"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreAutour"
-              },
-              "parameters": [
-                "MainShadow",
-                "SmallRedBall",
-                "20",
-                "45"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PrimitiveDrawing::Line"
-              },
-              "parameters": [
-                "Rope",
-                "SmallRedBall.BoundingBoxCenterX()",
-                "SmallRedBall.CenterY()",
-                "SwingBox.CenterX()",
-                "SwingBox.CenterY()",
-                "3"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
         }
       ],
       "layers": [
@@ -1015,14 +1094,14 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "Rope_32Example",
-      "name": "Rope Example",
+      "mangledName": "Levels",
+      "name": "Levels",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -1034,50 +1113,31 @@
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": true,
-        "zoomFactor": 0.11,
+        "snap": false,
+        "zoomFactor": 0.5000000000000001,
         "windowMask": false
       },
-      "objectsGroups": [
-        {
-          "name": "Group",
-          "objects": [
-            {
-              "name": "SwingBox"
-            }
-          ]
-        }
-      ],
+      "objectsGroups": [],
       "variables": [
         {
           "name": "attached",
-          "type": "string",
-          "value": ""
-        },
-        {
-          "name": "followX",
-          "type": "string",
-          "value": ""
-        },
-        {
-          "name": "followY",
-          "type": "string",
-          "value": ""
-        },
-        {
-          "name": "speedLerp",
-          "type": "string",
-          "value": ""
-        },
-        {
-          "name": "bounceSpeed",
-          "type": "string",
-          "value": ""
+          "type": "boolean",
+          "value": false
         },
         {
           "name": "ropeJoint",
           "type": "string",
           "value": ""
+        },
+        {
+          "name": "finished",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "successMessage",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -1087,524 +1147,12 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "MainChar",
-          "persistentUuid": "8bc8c582-ec9c-406c-9842-04ecd41ff876",
-          "width": 0,
-          "x": 190,
-          "y": 65,
-          "zOrder": 1100,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "b2318ff7-308e-4c56-81fb-dc17c79f53bf",
-          "width": 0,
-          "x": 707,
-          "y": 1222,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "5219bec8-8426-4142-9b9d-d516a0b04b99",
-          "width": 0,
-          "x": 1083,
-          "y": 915,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "7b5fbda0-aafc-4c82-9477-c2dd8528b15a",
-          "width": 0,
-          "x": 3899,
-          "y": 340,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 61,
-          "layer": "",
-          "locked": false,
           "name": "Rope",
-          "persistentUuid": "b07efad5-8df5-4528-b18c-094ab739c1c3",
-          "width": 130,
-          "x": 2971,
-          "y": 1150,
-          "zOrder": 1000,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "a99d4f4f-25d9-4f37-9fa6-bfc3e86e0112",
+          "persistentUuid": "c61f810a-e245-4fa2-b24d-58c691310ad5",
           "width": 0,
-          "x": 2082,
-          "y": 1068,
+          "x": 341,
+          "y": 16,
           "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "2c6b79db-f16d-475e-81c1-9004ef779a5b",
-          "width": 0,
-          "x": 3190,
-          "y": 189,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "8005456b-9388-45dd-bcf6-aa0e567c5cc4",
-          "width": 0,
-          "x": 1593,
-          "y": 1134,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "5c03968f-a04b-4969-a595-b7ddfc4e4ee5",
-          "width": 0,
-          "x": 4691,
-          "y": 1362,
-          "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "42161da2-ae71-4ec1-b32f-c7daef162ffa",
-          "width": 0,
-          "x": 4446,
-          "y": 608,
-          "zOrder": 13,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "c662c738-8507-4c84-adab-33ccd62230f3",
-          "width": 0,
-          "x": 562,
-          "y": 673,
-          "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "66d87c63-d6c5-4f7b-b694-7056b7931193",
-          "width": 0,
-          "x": 3068,
-          "y": 1399,
-          "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "4ccfa43f-764a-4074-86f6-2d0810e726d8",
-          "width": 0,
-          "x": 3431,
-          "y": 1102,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "d4bbc0a9-a9fd-4642-b3ec-89a4ba5a8483",
-          "width": 0,
-          "x": 2633,
-          "y": 518,
-          "zOrder": 17,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Follow",
-          "persistentUuid": "2efe6186-f191-41db-b0f1-24c29a46406b",
-          "width": 0,
-          "x": 168,
-          "y": 42,
-          "zOrder": 18,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": -340.156,
-          "customSize": true,
-          "height": 37,
-          "layer": "",
-          "locked": false,
-          "name": "Platform",
-          "persistentUuid": "10ea97dd-b438-499c-95af-078a7b347d4f",
-          "width": 312,
-          "x": 67,
-          "y": 854,
-          "zOrder": 19,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 84,
-          "layer": "",
-          "locked": false,
-          "name": "Platform",
-          "persistentUuid": "749a0600-f2b5-4eb4-8a4b-a98f9579c9e9",
-          "width": 626,
-          "x": 544,
-          "y": 1573,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 5110,
-          "layer": "",
-          "locked": false,
-          "name": "Platform",
-          "persistentUuid": "f5881fa5-7b8a-47ce-a0f8-d976f6a59bf4",
-          "width": 46,
-          "x": 61,
-          "y": -2500,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 92,
-          "layer": "",
-          "locked": false,
-          "name": "Platform",
-          "persistentUuid": "2e557007-2bf5-4d90-8eb4-f0a5ea849bd4",
-          "width": 183,
-          "x": 1556,
-          "y": 1631,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 110,
-          "layer": "",
-          "locked": false,
-          "name": "Platform",
-          "persistentUuid": "c748cd8a-3f1d-4364-8759-76cb1c310734",
-          "width": 359,
-          "x": 3289,
-          "y": 800,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 104,
-          "layer": "",
-          "locked": false,
-          "name": "Platform",
-          "persistentUuid": "3e809a9d-cd5c-4ea7-bcfc-6bc197efe495",
-          "width": 215,
-          "x": 2432,
-          "y": 1008,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 103,
-          "layer": "",
-          "locked": false,
-          "name": "Platform",
-          "persistentUuid": "76609129-24ba-4bba-9732-52d0fbc52b8c",
-          "width": 366,
-          "x": 2272,
-          "y": 1661,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 96,
-          "layer": "",
-          "locked": false,
-          "name": "Platform",
-          "persistentUuid": "0f5b91c6-bbdf-4270-aa25-426f418f899e",
-          "width": 350,
-          "x": 3743,
-          "y": 1376,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 5110,
-          "layer": "",
-          "locked": false,
-          "name": "Finish",
-          "persistentUuid": "eb4924a6-ddb9-4652-acb7-417e359cdd15",
-          "width": 27,
-          "x": 5225,
-          "y": -2500,
-          "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "ba07870d-9be8-4278-92ee-eb893efaca07",
-          "width": 0,
-          "x": 1306,
-          "y": 251,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "c01c1dab-0caa-43ca-b860-f53fe9076358",
-          "width": 0,
-          "x": 2220,
-          "y": 154,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 93,
-          "layer": "",
-          "locked": false,
-          "name": "Platform",
-          "persistentUuid": "52114d53-3757-4137-bc36-3c634691ca89",
-          "width": 148,
-          "x": 4691,
-          "y": 970,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 84,
-          "layer": "",
-          "locked": false,
-          "name": "Platform",
-          "persistentUuid": "90292489-b90d-45f1-997d-d2aa0ef4e7c4",
-          "width": 428,
-          "x": 1369,
-          "y": 680,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 7642,
-          "layer": "",
-          "locked": true,
-          "name": "Background",
-          "persistentUuid": "895e3adb-4966-4105-94fe-577da1bc206d",
-          "width": 7064,
-          "x": -1080,
-          "y": -2806,
-          "zOrder": -1000,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "MainShadow",
-          "persistentUuid": "a41ff6b2-d7bc-4b6d-b1ff-67262702ba94",
-          "width": 0,
-          "x": 140,
-          "y": 13,
-          "zOrder": 19,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "acc556b0-bb59-42ad-b96b-88e1c23e1ea4",
-          "width": 0,
-          "x": 4085,
-          "y": 961,
-          "zOrder": 1101,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 4,
-          "layer": "",
-          "locked": false,
-          "name": "BoundsLine",
-          "persistentUuid": "ca788f5f-1fb2-4e9f-b73d-7c3634b7e04f",
-          "width": 5163,
-          "x": 79,
-          "y": 2200,
-          "zOrder": -900,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "9e735875-aa81-4ba8-9cb1-9ea300e04035",
-          "width": 0,
-          "x": 4025,
-          "y": 1598,
-          "zOrder": 1102,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1612,46 +1160,133 @@
       ],
       "objects": [
         {
-          "name": "Follow",
+          "bold": false,
+          "italic": true,
+          "name": "ContinueText",
+          "smoothed": true,
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "TextObject::Text",
+          "underlined": false,
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": []
+          "string": "Press to continue...",
+          "font": "Nathaniel-19.otf",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         },
         {
-          "height": 32,
-          "name": "Background",
+          "bold": false,
+          "italic": true,
+          "name": "SuccessText",
+          "smoothed": true,
           "tags": "",
-          "texture": "Back.jpg",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Level cleared!",
+          "font": "Nathaniel-19.otf",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "additive": false,
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 90,
+          "emitterForceMax": 170,
+          "emitterForceMin": 150,
+          "flow": 200,
+          "maxParticleNb": 300,
+          "name": "NewParticlesEmitter",
+          "particleAlpha1": 204,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 6,
+          "particleBlue2": 28,
+          "particleGravityX": 0,
+          "particleGravityY": 100,
+          "particleGreen1": 236,
+          "particleGreen2": 181,
+          "particleLifeTimeMax": 10,
+          "particleLifeTimeMin": 0.5,
+          "particleRed1": 255,
+          "particleRed2": 248,
+          "particleSize1": 100,
+          "particleSize2": 100,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 3,
+          "rendererParam2": 4,
+          "rendererType": "Line",
+          "tags": "",
+          "tank": 50,
+          "textureParticleName": "",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 3,
           "variables": [],
           "effects": [],
           "behaviors": []
         },
         {
-          "name": "BoundsLine",
+          "name": "Cloud",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Physics2",
+              "type": "Physics2::Physics2Behavior",
+              "bodyType": "Static",
+              "bullet": false,
+              "fixedRotation": true,
+              "canSleep": true,
+              "shape": "Box",
+              "shapeDimensionA": 0,
+              "shapeDimensionB": 10,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "polygonOrigin": "Center",
+              "vertices": [],
+              "density": 1,
+              "friction": 0.3,
+              "restitution": 0.5,
+              "linearDamping": 0.1,
+              "angularDamping": 0.1,
+              "gravityScale": 1,
+              "layers": 1,
+              "masks": 1
+            }
+          ],
           "animations": [
             {
-              "name": "BoundsLine",
+              "name": "",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "timeBetweenFrames": 0.02500000037252903,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "BoundsLine.png",
+                      "image": "cloud.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1664,7 +1299,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0.466064453125,
+                            "y": 150
+                          },
+                          {
+                            "x": 406,
+                            "y": 150
+                          },
+                          {
+                            "x": 406,
+                            "y": 242
+                          },
+                          {
+                            "x": 0,
+                            "y": 242
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1675,85 +1329,13 @@
       ],
       "events": [
         {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "speedLerp",
-                "=",
-                "0.05"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ZoomCamera"
-              },
-              "parameters": [
-                "",
-                "0.5",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Physics2::ApplyImpulse"
-              },
-              "parameters": [
-                "MainChar",
-                "Physics2Behavior",
-                "0.2",
-                "0",
-                "MainChar.X()",
-                "MainChar.Y()"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "bounceSpeed",
-                "=",
-                "0.001"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "Smooth Follow Camera",
+          "name": "Initialize variables",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -1761,33 +1343,19 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
+              "conditions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ModVarScene"
+                    "value": "DepartScene"
                   },
                   "parameters": [
-                    "followX",
-                    "=",
-                    "lerp(Follow.X(), MainChar.X() , Variable(speedLerp) )  "
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "followY",
-                    "=",
-                    "lerp(Follow.Y(), MainChar.Y() , Variable(speedLerp) )  "
+                    ""
                   ],
                   "subInstructions": []
                 }
               ],
+              "actions": [],
               "events": [
                 {
                   "disabled": false,
@@ -1798,28 +1366,57 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "MettreXY"
+                        "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
-                        "Follow",
-                        "=",
-                        "Variable(followX)",
-                        "=",
-                        "Variable(followY)"
+                        "attached",
+                        ""
                       ],
                       "subInstructions": []
                     },
                     {
                       "type": {
                         "inverted": false,
-                        "value": "CentreCamera"
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "finished",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
                       },
                       "parameters": [
                         "",
-                        "Follow",
+                        "\"sceneStart\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
                         "",
+                        "\"Level\" + GlobalVariableString(currentLevel)",
+                        "0",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StopSoundCanal"
+                      },
+                      "parameters": [
                         "",
-                        ""
+                        "2"
                       ],
                       "subInstructions": []
                     }
@@ -1838,30 +1435,89 @@
           "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "When touched attach a rope to nearest swingbox (group)",
+          "name": "Background effects",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "EmptyCloudBackground",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Physics2::Collision"
+                  },
+                  "parameters": [
+                    "SmallRedBall",
+                    "Physics2",
+                    "Cloud",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "cloud.ogg",
+                    "",
+                    "50",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
           "parameters": []
         },
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisBouton"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [],
+          "name": "Camera settings",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
               "disabled": false,
@@ -1871,12 +1527,96 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarScene"
+                    "value": "DepartScene"
                   },
                   "parameters": [
-                    "attached",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCameraX"
+                  },
+                  "parameters": [
+                    "",
                     "=",
+                    "SmallRedBall.CenterX()",
+                    "",
                     "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
+                  },
+                  "parameters": [
+                    "SmallRedBall",
+                    "SmoothCamera",
+                    "yes",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Rope logic",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisBouton"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"sceneStart\"",
+                    ">=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "finished",
+                    "False"
                   ],
                   "subInstructions": []
                 }
@@ -1891,12 +1631,150 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "PickNearest"
+                        "value": "SceneVariableAsBoolean"
                       },
                       "parameters": [
-                        "Group",
-                        "MainChar.X()",
-                        "MainChar.Y()",
+                        "attached",
+                        "="
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PickNearest"
+                          },
+                          "parameters": [
+                            "Star",
+                            "SmallRedBall.X()",
+                            "SmallRedBall.Y()",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Distance"
+                              },
+                              "parameters": [
+                                "Star",
+                                "SmallRedBall",
+                                "500",
+                                ""
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Physics2::AddDistanceJoint"
+                              },
+                              "parameters": [
+                                "Star",
+                                "Physics2",
+                                "Star.CenterX()",
+                                "Star.CenterY()",
+                                "SmallRedBall",
+                                "SmallRedBall.CenterX()",
+                                "SmallRedBall.CenterY()",
+                                "-1",
+                                "0.98",
+                                "0.5",
+                                "no",
+                                "ropeJoint"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Opacity"
+                              },
+                              "parameters": [
+                                "Star",
+                                "=",
+                                "250"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "LinkedObjects::LinkObjects"
+                              },
+                              "parameters": [
+                                "",
+                                "SmallRedBall",
+                                "Star"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "SetSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "attached",
+                                "True"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "Physics2::ApplyImpulse"
+                              },
+                              "parameters": [
+                                "SmallRedBall",
+                                "Physics2",
+                                "SmallRedBall.Physics2::LinearVelocityX()*0.001",
+                                "SmallRedBall.Physics2::LinearVelocityY()*0.001",
+                                "SmallRedBall.CenterX()",
+                                "SmallRedBall.CenterY()"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Star",
+                        "SmallRedBall",
+                        "500",
                         ""
                       ],
                       "subInstructions": []
@@ -1906,57 +1784,28 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Opacity"
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
                       },
                       "parameters": [
-                        "Group",
-                        "=",
-                        "250"
+                        "",
+                        "Star",
+                        "SmallRedBall",
+                        ""
                       ],
                       "subInstructions": []
                     },
                     {
                       "type": {
                         "inverted": false,
-                        "value": "LinkedObjects::LinkObjects"
+                        "value": "PrimitiveDrawing::Line"
                       },
                       "parameters": [
-                        "",
-                        "MainChar",
-                        "Group"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Physics2::AddDistanceJoint"
-                      },
-                      "parameters": [
-                        "Group",
-                        "Physics2Behavior",
-                        "Group.PointX(\"Swing\")",
-                        "Group.PointY(\"Swing\")",
-                        "MainChar",
-                        "MainChar.X()",
-                        "MainChar.Y()",
-                        "-1",
-                        "",
-                        "",
-                        "no",
-                        "ropeJoint"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarScene"
-                      },
-                      "parameters": [
-                        "attached",
-                        "=",
-                        "1"
+                        "Rope",
+                        "SmallRedBall.CenterX()",
+                        "SmallRedBall.CenterY()",
+                        "Star.PointX(\"Grab\")",
+                        "Star.PointY(\"Grab\")",
+                        "3"
                       ],
                       "subInstructions": []
                     }
@@ -1965,55 +1814,6 @@
                 }
               ]
             },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "Group",
-                    "MainChar"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "PrimitiveDrawing::Line"
-                  },
-                  "parameters": [
-                    "Rope",
-                    "MainChar.X()",
-                    "MainChar.Y()",
-                    "Group.PointX(\"Swing\")",
-                    "Group.PointY(\"Swing\")",
-                    "3"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            }
-          ]
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "disabled": false,
-          "folded": false,
-          "name": "When released remove rope and unlink Main Character",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
             {
               "disabled": false,
               "folded": false,
@@ -2033,79 +1833,116 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarScene"
+                    "value": "CompareTimer"
                   },
                   "parameters": [
-                    "attached",
-                    "=",
+                    "",
+                    "\"sceneStart\"",
+                    ">=",
                     "1"
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                  },
-                  "parameters": [
-                    "",
-                    "Group",
-                    "MainChar"
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "attached",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Opacity"
-                  },
-                  "parameters": [
-                    "Group",
-                    "=",
-                    "255"
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                      },
+                      "parameters": [
+                        "",
+                        "Star",
+                        "SmallRedBall",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Opacity"
+                      },
+                      "parameters": [
+                        "Star",
+                        "=",
+                        "255"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "LinkedObjects::RemoveLinkBetween"
+                      },
+                      "parameters": [
+                        "",
+                        "Star",
+                        "SmallRedBall"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::Remove joint"
+                      },
+                      "parameters": [
+                        "Star",
+                        "Physics2",
+                        "Variable(ropeJoint)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "attached",
+                        "="
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Physics2::ApplyImpulse"
+                      },
+                      "parameters": [
+                        "SmallRedBall",
+                        "Physics2",
+                        "SmallRedBall.Physics2::LinearVelocityX()*0.001",
+                        "SmallRedBall.Physics2::LinearVelocityY()*0.001",
+                        "SmallRedBall.CenterX()",
+                        "SmallRedBall.CenterY()"
+                      ],
+                      "subInstructions": []
+                    }
                   ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Physics2::Remove joint"
-                  },
-                  "parameters": [
-                    "Group",
-                    "Physics2Behavior",
-                    "Variable(ropeJoint)"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "LinkedObjects::RemoveLinkBetween"
-                  },
-                  "parameters": [
-                    "",
-                    "MainChar",
-                    "Group"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "attached",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
+                  "events": []
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": []
@@ -2117,7 +1954,7 @@
           "creationTime": 0,
           "disabled": false,
           "folded": false,
-          "name": "Tidy up GFX",
+          "name": "Ending",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -2125,18 +1962,735 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "SmallRedBall",
+                    ">=",
+                    "Finish.X()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "finished",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
               "actions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreAutour"
+                    "value": "ResetTimer"
                   },
                   "parameters": [
-                    "MainShadow",
-                    "MainChar",
+                    "",
+                    "\"sceneFinish\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "finished",
+                    "True"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CentreCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "SmallRedBall",
+                    "no",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ZoomCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SmoothCamera::SmoothCamera::SetFollowOnY"
+                  },
+                  "parameters": [
+                    "SmallRedBall",
+                    "SmoothCamera",
+                    "yes",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "0.05"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "whoosh.wav",
+                    "",
                     "20",
-                    "45"
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "finished",
+                    "True"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"sceneFinish\"",
+                    ">=",
+                    "0.07"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "successMessage",
+                    "False"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
+                  },
+                  "parameters": [
+                    "SmallRedBall",
+                    "SmoothCamera",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SmoothCamera::SmoothCamera::SetFollowOnY"
+                  },
+                  "parameters": [
+                    "SmallRedBall",
+                    "SmoothCamera",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "SuccessText",
+                    "CameraX(\"\", 0)",
+                    "CameraY(\"\", 0)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "SuccessText",
+                    "=",
+                    "CameraX(\"\", 0)",
+                    "=",
+                    "CameraY(\"\", 0) - 50"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "BluePanel",
+                    "CameraX(\"\", 0)",
+                    "CameraY(\"\", 0)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "BluePanel",
+                    "=",
+                    "CameraX(\"\", 0)",
+                    "=",
+                    "CameraY(\"\", 0) - 50"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "ContinueText",
+                    "CameraX(\"\", 0)",
+                    "CameraY(\"\", 0)",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "ContinueText",
+                    "=",
+                    "CameraX(\"\", 0) + 150",
+                    "=",
+                    "CameraY(\"\", 0) + 100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "NewParticlesEmitter",
+                    "CameraX(\"\", 0)",
+                    "CameraY(\"\", 0) + 50",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "NewParticlesEmitter",
+                    "-90",
+                    "0",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "NewParticlesEmitter",
+                    "=",
+                    "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "successMessage",
+                    "True"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "applause.wav",
+                    "2",
+                    "",
+                    "30",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "currentLevel",
+                        "=",
+                        "4"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "SuccessText",
+                        "=",
+                        "\"Congratulations!\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "SuccessText",
+                        "=",
+                        "CameraX(\"\", 0)",
+                        "=",
+                        "CameraY(\"\", 0) - 50"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"sceneFinish\"",
+                    ">=",
+                    "0.1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "successMessage",
+                    "True"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "currentLevel",
+                        "=",
+                        "4"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Title\"",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "currentLevel",
+                        "=",
+                        "4"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Levels\"",
+                        "yes"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "currentLevel",
+                        "=",
+                        "GlobalVariable(currentLevel) + 1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"sceneFinish\"",
+                    ">=",
+                    "5"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "successMessage",
+                        "True"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "currentLevel",
+                            "=",
+                            "3"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Title\"",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "currentLevel",
+                            "=",
+                            "3"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "Scene"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Levels\"",
+                            "yes"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarGlobal"
+                          },
+                          "parameters": [
+                            "currentLevel",
+                            "=",
+                            "GlobalVariable(currentLevel) + 1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "Falling off",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PosY"
+                  },
+                  "parameters": [
+                    "SmallRedBall",
+                    ">",
+                    "CameraHeight(\"\", 0)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "finished",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Levels\"",
+                    "yes"
                   ],
                   "subInstructions": []
                 }
@@ -2145,487 +2699,6 @@
             }
           ],
           "parameters": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "On collision increase bounce",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Physics2::Collision"
-              },
-              "parameters": [
-                "MainChar",
-                "Physics2Behavior",
-                "Platform",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Physics2::ApplyImpulse"
-              },
-              "parameters": [
-                "MainChar",
-                "Physics2Behavior",
-                "MainChar.Physics2Behavior::LinearVelocityX()*Variable(bounceSpeed)",
-                "MainChar.Physics2Behavior::LinearVelocityY()*Variable(bounceSpeed)",
-                "MainChar.X()",
-                "MainChar.Y()"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Has ther Ball stopped?",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Physics2::LinearVelocityLength"
-              },
-              "parameters": [
-                "MainChar",
-                "Physics2Behavior",
-                "<",
-                "0.0001"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Rope Example\"",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Did we drop off screen? Restart!",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PosY"
-              },
-              "parameters": [
-                "MainChar",
-                ">",
-                "2200"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Rope Example\"",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Did we pass finish",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "MainChar",
-                "Finish",
-                "Finish",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Title\"",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        }
-      ],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "name": "Back",
-          "visibility": true,
-          "cameras": [],
-          "effects": []
-        },
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "name": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": []
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Physics2",
-          "type": "Physics2::Physics2Behavior",
-          "gravityX": 0,
-          "gravityY": 9.8,
-          "scaleX": 100,
-          "scaleY": 100
-        }
-      ]
-    },
-    {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "Level_321",
-      "name": "Level 1",
-      "oglFOV": 90,
-      "oglZFar": 500,
-      "oglZNear": 1,
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridColor": 10401023,
-        "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.5000000000000001,
-        "windowMask": false
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 1159,
-          "layer": "",
-          "locked": true,
-          "name": "ForestBackground",
-          "persistentUuid": "247a71a2-d81a-4426-b825-08105267244e",
-          "width": 1887,
-          "x": -448,
-          "y": -303,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SmallRedBall",
-          "persistentUuid": "6edc9f4c-a5b8-4274-82bb-21186896534b",
-          "width": 0,
-          "x": 55,
-          "y": 67,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "SwingBox",
-          "persistentUuid": "4ef62f5d-ebdb-489b-97f9-7b10b0aae7d4",
-          "width": 0,
-          "x": 435,
-          "y": 35,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 759,
-          "layer": "",
-          "locked": false,
-          "name": "Finish",
-          "persistentUuid": "43c76aac-10bc-4f41-9f03-d508d9410b27",
-          "width": 53,
-          "x": 899,
-          "y": -127,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Rope",
-          "persistentUuid": "029ae093-152f-49c6-ba47-ddc53006eb4b",
-          "width": 0,
-          "x": 1127,
-          "y": -21,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [],
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "LinkedObjects::LinkObjects"
-              },
-              "parameters": [
-                "",
-                "SmallRedBall",
-                "SwingBox"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Physics2::AddDistanceJoint"
-              },
-              "parameters": [
-                "SwingBox",
-                "Physics2",
-                "SwingBox.CenterX()",
-                "SwingBox.CenterY()",
-                "SmallRedBall",
-                "SmallRedBall.CenterX()",
-                "SmallRedBall.CenterY()",
-                "-1",
-                "",
-                "",
-                "no",
-                "ropeJoint"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
-              },
-              "parameters": [
-                "SmallRedBall",
-                "SmoothCamera",
-                "yes",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreAutour"
-              },
-              "parameters": [
-                "MainShadow",
-                "SmallRedBall",
-                "20",
-                "45"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PrimitiveDrawing::Line"
-              },
-              "parameters": [
-                "Rope",
-                "SmallRedBall.BoundingBoxCenterX()",
-                "SmallRedBall.CenterY()",
-                "SwingBox.CenterX()",
-                "SwingBox.CenterY()",
-                "3"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
         }
       ],
       "layers": [
@@ -2681,7 +2754,7 @@
       "name": "SmoothCamera",
       "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Line Hero Pack/Master/SVG/Computers and Hardware/Computers and Hardware_camcoder_gopro_go_pro_camera.svg",
       "shortDescription": "Smoothly scroll to follow an object.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "origin": {
         "identifier": "SmoothCamera",
         "name": "gdevelop-extension-store"
@@ -4012,7 +4085,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "SmoothCamera::SmoothCamera::SetPropertyFollowOnY"
+                        "value": "SmoothCamera::SmoothCamera::SetPropertyFollowOnX"
                       },
                       "parameters": [
                         "Object",
@@ -4035,7 +4108,7 @@
                         "value": "GetArgumentAsBoolean"
                       },
                       "parameters": [
-                        "\"FollowOnY\""
+                        "\"FollowOnX\""
                       ],
                       "subInstructions": []
                     }
@@ -4044,7 +4117,7 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "SmoothCamera::SmoothCamera::SetPropertyFollowOnY"
+                        "value": "SmoothCamera::SmoothCamera::SetPropertyFollowOnX"
                       },
                       "parameters": [
                         "Object",
@@ -4081,9 +4154,9 @@
                 {
                   "codeOnly": false,
                   "defaultValue": "",
-                  "description": "Follow on Y axis",
+                  "description": "Follow on X axis",
                   "longDescription": "",
-                  "name": "FollowOnY",
+                  "name": "FollowOnX",
                   "optional": false,
                   "supplementaryInformation": "",
                   "type": "yesorno"
@@ -8979,6 +9052,585 @@
       ]
     }
   ],
-  "externalLayouts": [],
+  "externalLayouts": [
+    {
+      "associatedLayout": "Levels",
+      "name": "Level2",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SmallRedBall",
+          "persistentUuid": "18521363-bf9f-4de8-9e81-d2da646b4bda",
+          "width": 0,
+          "x": 123.00001525878906,
+          "y": 185,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 88,
+          "layer": "",
+          "locked": false,
+          "name": "Cloud",
+          "persistentUuid": "4b5102a8-7a0e-45b7-9b64-33fed5281a9c",
+          "width": 147.63636779785156,
+          "x": 78.3636474609375,
+          "y": 410,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Star",
+          "persistentUuid": "c534fae5-8c04-479b-8ef4-296959885ea4",
+          "width": 0,
+          "x": 319,
+          "y": 51,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 85,
+          "layer": "",
+          "locked": false,
+          "name": "Cloud",
+          "persistentUuid": "ebc32240-cf50-4356-9d53-cde2cb04bc08",
+          "width": 142.60330200195312,
+          "x": 790,
+          "y": 428,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Star",
+          "persistentUuid": "89342d0e-e9d3-425d-9baf-e4ade4d45d71",
+          "width": 0,
+          "x": 1190,
+          "y": 47,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 85,
+          "layer": "",
+          "locked": false,
+          "name": "Cloud",
+          "persistentUuid": "bfd0cf4d-5de0-4609-9a68-c94a2481ecb5",
+          "width": 142.60330200195312,
+          "x": 1629,
+          "y": 431,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1185,
+          "layer": "",
+          "locked": false,
+          "name": "Finish",
+          "persistentUuid": "1adbd830-656a-4de7-a6cc-250b1800f63b",
+          "width": 53,
+          "x": 2089,
+          "y": -241,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1144,
+          "layer": "",
+          "locked": false,
+          "name": "EmptyCloudBackground",
+          "persistentUuid": "cfd4617f-d6af-42ca-a80e-1d858921f1ee",
+          "width": 3279,
+          "x": -478,
+          "y": -222,
+          "zOrder": -10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.5000000000000001,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Levels",
+      "name": "Level1",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SmallRedBall",
+          "persistentUuid": "40bbb2d6-cf43-43aa-91ae-fea29a9bc78a",
+          "width": 0,
+          "x": 123,
+          "y": 97,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 78,
+          "layer": "",
+          "locked": false,
+          "name": "Cloud",
+          "persistentUuid": "b01675d9-ae8f-4dbe-89b2-64f43c48a370",
+          "width": 130.8594970703125,
+          "x": 95.1405029296875,
+          "y": 444,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Star",
+          "persistentUuid": "adefe439-d9b6-44bd-a3d9-7d97336d229c",
+          "width": 0,
+          "x": 381,
+          "y": 47,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1321,
+          "layer": "",
+          "locked": true,
+          "name": "EmptyCloudBackground",
+          "persistentUuid": "cbb9a2c0-3dbf-4950-ba52-d038ec3dcc6b",
+          "width": 2836,
+          "x": -591,
+          "y": -263,
+          "zOrder": -10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1162,
+          "layer": "",
+          "locked": false,
+          "name": "Finish",
+          "persistentUuid": "399c1fcc-357c-49d8-9d1e-04a5d8f1881c",
+          "width": 32,
+          "x": 1634,
+          "y": -159,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Star",
+          "persistentUuid": "8d09d28c-0f1a-43cc-9909-705196ce33a3",
+          "width": 0,
+          "x": 1179,
+          "y": 48,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.40000000000000013,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Levels",
+      "name": "Level3",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 992,
+          "layer": "",
+          "locked": true,
+          "name": "EmptyCloudBackground",
+          "persistentUuid": "e26159ae-4634-4166-918d-4721eb1f2a7a",
+          "width": 4984,
+          "x": -449,
+          "y": -205,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SmallRedBall",
+          "persistentUuid": "5f04d333-7fac-4b87-82e7-7bf259594037",
+          "width": 0,
+          "x": 64,
+          "y": 90,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 84.64039611816406,
+          "layer": "",
+          "locked": false,
+          "name": "Cloud",
+          "persistentUuid": "da06e93a-70e0-4b63-bc9b-2842e39405d6",
+          "width": 142,
+          "x": 32,
+          "y": 442.359619140625,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Star",
+          "persistentUuid": "6f135252-065f-411c-a825-d43198797931",
+          "width": 0,
+          "x": 401,
+          "y": 47,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 184.7783203125,
+          "layer": "",
+          "locked": false,
+          "name": "Cloud",
+          "persistentUuid": "9effa2a4-ff21-4337-ab7c-9bfcfaf22bb1",
+          "width": 310,
+          "x": 1264,
+          "y": 443.2216796875,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Star",
+          "persistentUuid": "85561470-3c7e-4a17-b189-a72cd7772ced",
+          "width": 0,
+          "x": 2247,
+          "y": 38,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1076,
+          "layer": "",
+          "locked": false,
+          "name": "Finish",
+          "persistentUuid": "1575c83d-8026-4151-b58e-bdff7b45000f",
+          "width": 32,
+          "x": 3403,
+          "y": -230,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Star",
+          "persistentUuid": "1454e9e2-29f6-4673-a88a-77e2da25322f",
+          "width": 0,
+          "x": 3030,
+          "y": 43,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.40000000000000013,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "Levels",
+      "name": "Level4",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 869,
+          "layer": "",
+          "locked": true,
+          "name": "EmptyCloudBackground",
+          "persistentUuid": "5e66b462-d6d6-47e2-902e-87668f30a04e",
+          "width": 5516,
+          "x": -661,
+          "y": -209,
+          "zOrder": -10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SmallRedBall",
+          "persistentUuid": "81c76042-0552-4855-ad4a-fafa966e1eda",
+          "width": 0,
+          "x": 53,
+          "y": 113,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 103.11822509765625,
+          "layer": "",
+          "locked": false,
+          "name": "Cloud",
+          "persistentUuid": "5b1a5132-3498-4a88-ba15-45b0a4533cc0",
+          "width": 173,
+          "x": 0,
+          "y": 426,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Star",
+          "persistentUuid": "c39d4adf-5434-4753-8085-e90236b7c049",
+          "width": 0,
+          "x": 319,
+          "y": 71,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Star",
+          "persistentUuid": "d068da41-09bf-45f5-abb3-8e5a52ffd947",
+          "width": 0,
+          "x": 1126,
+          "y": 72,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Star",
+          "persistentUuid": "3d27b7a9-92f1-426e-b23c-35f6ca28ac46",
+          "width": 0,
+          "x": 1904,
+          "y": 70,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 115,
+          "layer": "",
+          "locked": false,
+          "name": "Cloud",
+          "persistentUuid": "7c36f619-9df7-4d99-a35e-cf4f90ead743",
+          "width": 192.9338836669922,
+          "x": 2644.066162109375,
+          "y": 431,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 1005,
+          "layer": "",
+          "locked": false,
+          "name": "Finish",
+          "persistentUuid": "450d6578-b659-439e-85a8-6290f3c2d3f6",
+          "width": 28,
+          "x": 4061,
+          "y": -225,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Star",
+          "persistentUuid": "d850b960-41a6-4292-bd4f-68a4b59e5e38",
+          "width": 0,
+          "x": 3463,
+          "y": 106,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.5000000000000001,
+        "windowMask": false
+      }
+    },
+    {
+      "associatedLayout": "",
+      "name": "Level5",
+      "instances": [],
+      "editionSettings": {}
+    }
+  ],
   "externalSourceFiles": []
 }
