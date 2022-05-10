@@ -133,51 +133,6 @@
         "name": "Hole-1.png",
         "smoothed": false,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Levels/Level 1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Level 1.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Levels/Level 2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Level 2.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Levels/Level 3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Level 3.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Levels/Level 4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Level 4.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Assets/Levels/Level 5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Level 5.png",
-        "smoothed": false,
-        "userAdded": false
       }
     ],
     "resourceFolders": []
